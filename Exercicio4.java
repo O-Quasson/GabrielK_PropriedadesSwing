@@ -34,6 +34,8 @@ public class Exercicio4 {
         } catch (ParseException e) {
             // TODO Auto-generated catch block
         }
+        //para aplicar a máscara em um JFormattedTextField, primeiro temos que declarar uma variável do tipo MaskFormatter e definir/setar a máscara (no caso, como é data, usar # permite digitar apenas números) com os acessórios (nesse caso, é a / separando o dia, mês e ano)
+        //a formatação do JFormattedTextField é aplicada por meio da propriedade .install do componente MaskFormatter
         mascara.install(campoIdade);
         
         MouseListener eventoCliqueCampo = new MouseListener() {
